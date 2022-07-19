@@ -1,6 +1,13 @@
 // Functions that will be used in the pipe and flow section of the course.
 
 /**
+ * # Explanation
+ * 
+ * Every function should return a value that can be used by pipe and flow.
+ * 
+ */
+
+/**
  * # Add 1
  * 
  * Add 1 to a number that is passed in
