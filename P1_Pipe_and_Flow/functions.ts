@@ -68,3 +68,14 @@ export function typeEvaluator(x: any): any {
   console.log(typeof x);
   return x;
 }
+
+/**
+ * # Concat
+ * 
+ * @param a Number to use
+ * @param transformer Function to use to transform the number
+ * @returns [{number}, {string}]
+ */
+export function concat(a: number, transformer: (a: number) => string): [number, string] {
+    return [a, transformer(a)]
+}
