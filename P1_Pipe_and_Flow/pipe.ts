@@ -64,6 +64,7 @@ function typeEvaluator(x: any): any {
   return x;
 }
 
+// Now pipe the functions together
 pipe(1, add1, multiply2, log, typeEvaluator); // 4
-pipe(1, add1, multiply2, numberToString, log, typeEvaluator); // 4
-pipe(2, add1, multiply2, numberToString, log, typeEvaluator); // 6
+pipe(1, add1, multiply2, numberToString, log, typeEvaluator); // '4'
+pipe(2, add1, multiply2, numberToString, log, typeEvaluator); // '6'
