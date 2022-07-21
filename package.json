@@ -12,7 +12,10 @@
     "build": "tsc build",
     "start": "ts-node-dev --clear --respawn src/index.ts",
     "start:p1:pipe": "ts-node-dev --clear --respawn P1_Pipe_and_Flow/pipe.ts",
-    "start:p1:flow": "ts-node-dev --clear --respawn P1_Pipe_and_Flow/flow.ts"
+    "start:p1:flow": "ts-node-dev --clear --respawn P1_Pipe_and_Flow/flow.ts",
+    "start:p2:option.map": "ts-node-dev --clear --respawn P2_Option_Map_Flatten_Chain/map.ts",
+    "start:p2:option.flatten": "ts-node-dev --clear --respawn P2_Option_Map_Flatten_Chain/flatten.ts",
+    "start:p2:option.chain": "ts-node-dev --clear --respawn P2_Option_Map_Flatten_Chain/chain.ts"
   },
   "dependencies": {
     "@contactlab/appy": "3.1.3",
