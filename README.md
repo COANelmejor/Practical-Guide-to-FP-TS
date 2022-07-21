@@ -33,4 +33,16 @@ npm run start:p2:option.flatten
 
 // Example of Option.chain
 npm run start:p2:option.chain
+
+// Example of Task
+npm run start:p3:task
+
+// Example of Either
+npm run start:p3:either
+
+// Example of chaining various Eithers
+npm run start:p3:chaining_eithers
+
+// Example of TaskEither
+npm run start:p3:taskeither
 ```
