@@ -11,8 +11,8 @@ interface Foo {
 
 const foo = { bar: undefined } as Foo | undefined
 
-const pipe_1 = pipe(foo, (f) => f?.bar?.buzz) 
-console.log({pipe_1}) // undefined
+const pipe_1 = pipe(foo, (f) => f?.bar?.buzz)
+console.log({ pipe_1 }) // undefined
 
 // ------------------------------------------------------------------------------
 
@@ -27,6 +27,8 @@ pipe(
 
 // ------------------------------------------------------------------------------
 
+// With this code we get a very verbose response.
+
 const pipe_2 = pipe(
     foo,
     O.fromNullable,
@@ -37,14 +39,12 @@ const pipe_2 = pipe(
             O.map(({ buzz }) => buzz),
         ),
     ),
-) 
-console.log({pipe_2}) // { _tag: 'Some', value: { _tag: 'None' } }
-
-// With the previous code we get a very verbose response.
+)
+console.log({ pipe_2 }) // { _tag: 'Some', value: { _tag: 'None' } }
 
 // ------------------------------------------------------------------------------
 
-// We can user `O.flatten` to get a more concise response.
+// We can use `O.flatten` to get a more concise response.
 
 const pipe_3_flatten_1 = pipe(
     foo,
@@ -58,11 +58,12 @@ const pipe_3_flatten_1 = pipe(
     ),
     O.flatten,
 )
-console.log({pipe_3_flatten_1}) // { _tag: 'None' }
+console.log({ pipe_3_flatten_1 }) // { _tag: 'None' }
 
 // ------------------------------------------------------------------------------
 
 // Another example with with a value that is not undefined
+
 const fooWithValue = { bar: { buzz: 'Hello World' } } as Foo | undefined
 const pipe_3_flatten_2 = pipe(
     fooWithValue,
