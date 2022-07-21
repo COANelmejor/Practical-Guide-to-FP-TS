@@ -77,5 +77,5 @@ export function typeEvaluator(x: any): any {
  * @returns [{number}, {string}]
  */
 export function concat(a: number, transformer: (a: number) => string): [number, string] {
-    return [a, transformer(a)]
+  return [a, transformer(a)]
 }
