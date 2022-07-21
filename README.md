@@ -4,11 +4,11 @@ Practical Guide to Fp-ts, based on <https://dev.to/ryanleecode/series/7325> by [
 
 ## Description
 
-This is a practical guide to FP-TS, a library for functional programming in TypeScript.
+This repository is a practical guide with examples to show how to use [`FP-TS`](https://www.npmjs.com/package/fp-ts), a library for functional programming in TypeScript.
 
-It is a collection of useful libraries and tools for functional programming in TypeScript.
+It is a collection of useful examples.
 
-To run the examples, you need to install all the dependecies.
+To run the examples, you need to install all the dependencies.
 
 ```bash
 npm install
